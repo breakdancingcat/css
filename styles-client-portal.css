@@ -283,8 +283,12 @@
     padding-right: 2px !important;
 }
 
+.wsu-portal-page .logo-container {
+    margin-left: -5px;
+}
 
 /* Replace Bootstrap's container */
+
 .wsu-portal-page .logo-header,
 #navContainer {
     width: 100%;
