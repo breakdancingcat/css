@@ -20,10 +20,6 @@ footer {
     padding-left: max(1.5rem, (100% - 1140px) / 2) !important;
 }
 
-.logo-container {
-    margin-left: -5px;
-}
-
 /* ------------------------------------
  * Global styles 
  * ------------------------------------ */
