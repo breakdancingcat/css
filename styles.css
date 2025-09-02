@@ -259,7 +259,6 @@ body {
     padding-right: 2px !important;
 }
 
-
 .wsu-container .row {
     margin-right: -15px;
     margin-left: -15px;
@@ -269,14 +268,8 @@ body {
     padding: 0;
 }
 
-.panel:first-of-type {
-    /*
-    margin-top: -30px;
-    */
-}
-
 /* Replace Bootstrap's container */
-.container
+.container,
 .wsu-container,
 .logo-header,
 #navContainer {
