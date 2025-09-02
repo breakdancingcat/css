@@ -165,7 +165,7 @@
 
 .wsu-search__container .site-search {
     width: 400px;
-    max-width: 0 !important;
+    max-width: inherit !important;
     margin-bottom: 0;
 }
 
@@ -285,8 +285,7 @@
 
 
 /* Replace Bootstrap's container */
-.wsu-container,
-.logo-header,
+.wsu-portal-page .logo-header,
 #navContainer {
     width: 100%;
     margin: 0 auto;
