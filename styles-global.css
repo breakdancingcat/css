@@ -13,6 +13,13 @@ footer {
     margin-top: auto;
 }
 
+.wsu-container {
+    width: 100%;
+    margin: 0 auto;
+    padding-right: max(1.5rem, (100% - 1140px) / 2) !important;
+    padding-left: max(1.5rem, (100% - 1140px) / 2) !important;
+}
+
 .logo-container {
     margin-left: -5px;
 }
