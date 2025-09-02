@@ -268,6 +268,17 @@ footer {
     padding: 0;
 }
 
+.container {
+    width: 100%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 0;
+}
+
 /* Replace Bootstrap's container */
 .wsu-container,
 .logo-header,
@@ -304,7 +315,7 @@ footer {
     margin-bottom: 30px;
 }
 
-.xcontainer {
+.container {
     width: 100%;
     padding-right: max(1.5rem, (100% - 1140px) / 2) !important;
     padding-left: max(1.5rem, (100% - 1140px) / 2) !important;
@@ -502,15 +513,15 @@ a.DetailAction {
  *    causes content to wrap 1 word per line:
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
-    .visually-hidden {
-        border: 0;
-        clip: rect(0 0 0 0);
-        clip-path: inset(50%);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-        white-space: nowrap; /* 1 */
-    }
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
