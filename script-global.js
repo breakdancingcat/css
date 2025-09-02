@@ -15,5 +15,5 @@ document.head.insertAdjacentHTML(
 
 document.head.insertAdjacentHTML(
     'beforeend',
-    '<link rel="stylesheet" href="https://breakdancingcat.github.io/css/styles.css" />',
+    '<link rel="stylesheet" href="https://breakdancingcat.github.io/css/styles-global.css" />',
 );
