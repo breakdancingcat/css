@@ -264,6 +264,10 @@
     padding: 0;
 }
 
+#960212 {
+    height: 0;
+}
+
 /* Allow full width components */
 .ModuleContent,
 .ModuleContent > div:nth-child(1) {
