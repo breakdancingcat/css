@@ -3,5 +3,5 @@ document.head.insertAdjacentHTML(
     '<link rel="stylesheet" href="https://breakdancingcat.github.io/css/styles-client-portal.css" />',
 );
 
-document.body.classList.add('wsu-client-portal');
+document.body.classList.add('wsu-portal-page');
 
