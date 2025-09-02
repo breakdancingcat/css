@@ -264,17 +264,11 @@ footer {
     padding-right: 2px !important;
 }
 
-.wsu-container .row {
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
 #Column1 {
     padding: 0;
 }
 
 /* Replace Bootstrap's container */
-.container,
 .wsu-container,
 .logo-header,
 #navContainer {
@@ -282,6 +276,11 @@ footer {
     margin: 0 auto;
     padding-right: max(1.5rem, (100% - 1140px) / 2) !important;
     padding-left: max(1.5rem, (100% - 1140px) / 2) !important;
+}
+
+.wsu-container .row {
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 .logo-container {
