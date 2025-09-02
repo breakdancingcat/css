@@ -1,0 +1,256 @@
+/* ------------------------------------
+ * Layout 
+ * ------------------------------------ */
+
+body {
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.logo-container {
+    margin-left: -5px;
+}
+
+/* ------------------------------------
+ * Global styles 
+ * ------------------------------------ */
+
+:root {
+    --white: #ffffff;
+    --black: #18181b;
+
+    --green: #0c5449;
+    --green-50: #cedddb;
+    --green-100: #9ebbb6;
+    --green-200: #6d9892;
+    --green-300: #3d766d;
+    --green-500: #0b4a40;
+    --green-600: #094038;
+    --green-700: #08352f;
+    --green-800: #062b27;
+    --green-900: #05211e;
+
+    --gold: #ffcc33;
+    --gold-50: #fff5d6;
+    --gold-100: #ffebad;
+    --gold-200: #ffe085;
+    --gold-300: #ffd65c;
+    --gold-500: #edbd2c;
+    --gold-600: #dbae25;
+    --gold-700: #c89f1f;
+    --gold-800: #b69018;
+    --gold-900: #a48111;
+}
+
+/* ------------------------------------
+ * Buttons 
+ * ------------------------------------ */
+button.DetailAction,
+a.DetailAction {
+    background-color: var(--gold-200);
+    color: var(--green-800);
+
+    background-image: radial-gradient(200% 100% at 50% 100%, var(--gold-500), 50%, transparent 100%);
+
+    &:hover {
+        background-color: var(--gold-100);
+    }
+}
+
+/* ------------------------------------
+ * Headings 
+ * ------------------------------------ */
+.h {
+    padding: 0;
+    margin-bottom: 1.3rem;
+    border-bottom: 0;
+}
+
+.divider-gold {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 2px solid var(--gold);
+
+    &::after {
+        display: none;
+    }
+
+    @media screen and (min-width: 560px) {
+        border-bottom: 0;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: inline;
+            width: 100%;
+            height: 2px;
+            margin-left: 1rem;
+            top: 60%;
+            bottom: auto;
+            background-color: #ffcc33;
+        }
+    }
+}
+
+/* ------------------------------------
+ * Backgrounds
+ * ------------------------------------ */
+
+.wsu-background-gradient {
+    position: absolute;
+    z-index: 0;
+    content: "";
+    background-image: radial-gradient(200% 100% at 50% 100%,rgba(5,33,30,.9) 10%,transparent 100%);
+    inset: 0;
+}
+
+.flex {
+    display: flex;
+    gap: 2em;
+}
+
+.list-none {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+@media screen and (min-width: 560px) {
+    .wsu-button-row {
+        display: grid; 
+        grid-template-columns: repeat(1, minmax(0, 1fr)); 
+        gap: 2rem;
+    }
+    .wsu-button-row {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    }
+}
+
+/* ------------------------------------
+ * Youtube 
+ * ------------------------------------ */
+
+/* Allow responsive YouTube embeds */
+.youtube-video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.youtube-video-container::after {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+}
+
+.youtube-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------------------------------
+ * Hide only visually
+ * ------------------------------------ */
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/* ------------------------------------
+ * Footer 
+ * ------------------------------------ */
+.wsu-footer {
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background-color: var(--green-600);
+    color: var(--white);
+    display: flex;
+    border-top: 20px solid var(--green-700);
+    font-weight: 300;
+    font-size: 1.1em;
+
+    h2,
+    h3 {
+        color: var(--gold-300);
+        font-weight: 500;
+    } 
+
+    h2 a,
+    h3 a {
+        color: var(--gold-300);
+        text-underline-offset: 5px;
+        text-decoration-color: var(--green-600);
+
+        &:hover {
+            text-decoration-color: var(--gold-300);
+        }
+    }
+
+    em {
+        display: block;
+        margin-bottom: 0.5em; 
+        font-size: 12px; 
+        font-style: normal;
+        text-transform: uppercase; 
+        letter-spacing: 0.09em;
+    }
+
+    a {
+        color: var(--white); 
+        text-decoration-color: var(--green-200);
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+
+        &:hover {
+            text-decoration-color: var(--white);
+            text-decoration-thickness: 2px;
+            transition: all 300ms;
+        }
+    }
+
+    th {
+        font-weight: 400;
+        padding-bottom: 1.5rem;
+        letter-spacing: 0.09em;
+        font-size: 12px; 
+        text-transform: uppercase;
+        color: var(--gold);
+    }
+
+    td {
+        padding-right: 2em;
+        padding-bottom: 1em;
+    }
+
+    & > div {
+        width: 100%;
+    }
+}
