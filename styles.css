@@ -259,16 +259,6 @@ body {
     padding-right: 2px !important;
 }
 
-.container {
-    width: 100%;
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-    margin: 0 auto;
-}
-
-.row {
-    margin: 0;
-}
 
 .wsu-container .row {
     margin-right: -15px;
@@ -286,10 +276,12 @@ body {
 }
 
 /* Replace Bootstrap's container */
+.container
 .wsu-container,
 .logo-header,
 #navContainer {
     width: 100%;
+    margin: 0 auto;
     padding-right: max(1.5rem, (100% - 1140px) / 2) !important;
     padding-left: max(1.5rem, (100% - 1140px) / 2) !important;
 }
