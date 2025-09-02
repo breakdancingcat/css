@@ -8,6 +8,7 @@ body {
 footer {
     margin-top: auto;
 }
+
 /* ------------------------------------
  * Service portal 
  * ------------------------------------ */
@@ -314,15 +315,6 @@ footer {
     background-position: center 35%;
     margin-bottom: 30px;
 }
-
-.container {
-    width: 100%;
-    padding-right: max(1.5rem, (100% - 1140px) / 2) !important;
-    padding-left: max(1.5rem, (100% - 1140px) / 2) !important;
-    position: relative;
-    margin: 0 auto;
-}
-
 
 /* ------------------------------------
  * Global styles 
