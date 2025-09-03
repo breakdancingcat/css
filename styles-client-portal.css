@@ -169,6 +169,10 @@
     max-width: 500px;
 }
 
+.wsu-search__search-bar .form-control {
+    height: 33px;
+}
+
 
 /* ------------------------------------
  * Portal overview 
