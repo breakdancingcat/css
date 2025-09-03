@@ -4,4 +4,3 @@ document.head.insertAdjacentHTML(
 );
 
 document.body.classList.add('wsu-portal-page');
-
